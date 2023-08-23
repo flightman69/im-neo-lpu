@@ -19,7 +19,10 @@ https://github.com/flightman69/im-neo-lpu/assets/89738046/7b746212-0b1b-4676-816
 
 ### Text Tutorial:
 1. Open command prompt
-2. Install pyautogui using `pip install pyautogui`
+2. Install pyautogui using: 
+```bash 
+pip install pyautogui
+```
 3. Clone or download this repository
 4. Inside *solutions* folder you will find the solutions *not all but most of them*
 5. Copy the code you want and past it in *answers.txt*
