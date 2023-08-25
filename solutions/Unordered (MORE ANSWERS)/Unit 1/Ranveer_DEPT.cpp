@@ -26,7 +26,7 @@ int main(){
             bonus = arr[i].salary + (arr[i].salary * 0.05);
             cout << "salary : " << bonus << endl;
         } else { 
-            bonus = arr[i].salary + arr[i].salary * 0.02;
+            bonus = arr[i].salary * 0.02;
             cout << "salary : " << bonus << endl;
         }
         

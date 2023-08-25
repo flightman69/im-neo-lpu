@@ -23,8 +23,10 @@ Point calculateMidpoint(const Point& p1, const Point& p2) {
 
 int main() {
     Line line;
+    std::cout << "Enter coordinates of first point (X1 Y1): ";
     std::cin >> line.p1.x >> line.p1.y;
 
+    std::cout << "Enter coordinates of second point (X2 Y2): ";
     std::cin >> line.p2.x >> line.p2.y;
 
     double distance = calculateDistance(line.p1, line.p2);

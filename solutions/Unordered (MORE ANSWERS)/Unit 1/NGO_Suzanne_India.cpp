@@ -10,6 +10,6 @@ int main(){
 
   cout << "Number of children tickets sold : " << x << endl;
   cout << "Number of adult tickets sold : " << x+y << endl;
-  cout << "Number of senior tickets sold : " << 2*x << edl;
+  cout << "Number of senior tickets sold : " << 2*x << endl;
 
 }
