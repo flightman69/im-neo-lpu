@@ -25,20 +25,22 @@ int main() {
         counts.push_back(pair.second);
     }
     
-    std::sort(counts.begin(), counts.end);
+    std::sort(counts.begin(), counts.end());
     
-    for (int count : counts) {
-        for (const auto& pair : myMap) {
-            if (count == pair.second) {
+    for(int count : counts) {
+        for (auto it = myMap.begin(); it != myMap.end(); ) {
+            if (count == it->second) {
                 for (int i = 0; i < count; i++) {
-                    std::cout << pair.first << " ";
+                    std::cout << it->first << " ";
                 }
-                
-                myMap.erase(pair.first);
+                it = myMap.erase(it); // Advance the iterator after erasing
+            } else {
+                ++it; // Move to the next element
             }
         }
     }
     
     return 0;
 }
+
 
